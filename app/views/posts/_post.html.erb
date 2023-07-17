@@ -1,0 +1,24 @@
+<div id="<%= dom_id post %>">
+  <p>
+    <strong>Image:</strong>
+    <%= post.image %>
+  </p>
+
+  <p>
+    <strong>Title:</strong>
+    <%= post.title %>
+  </p>
+
+  <p>
+    <strong>Description:</strong>
+    <%= post.description %>
+  </p>
+  <p>
+    <strong>Comentarios:</strong>
+    <% post.comments.each do |comentario| %>
+      <%= comentario.content %>
+      </br>
+    <% end %>
+  </p>
+
+</div>
